@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('background.jpg'); /* استخدام الصورة كخلفية */
+    background-size: cover; /* جعل الصورة تغطي الشاشة بالكامل */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    background-position: center; /* مركز الصورة في الخلفية */
+    background-attachment: fixed; /* تثبيت الخلفية أثناء التمرير */
+    color: #111010; /* لون النص */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: #fff2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #e6ddddea;
+    width: 90%;
+    max-width: 500px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #111010;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px; /* التأكد من وجود حشو كافٍ */
+    border: none;
+    background-color: #3399ff; /* اللون الأزرق */
+    color: rgb(17, 16, 16);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007acc; /* لون أزرق داكن */
+}
+
+#diagnosis-result {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #ec0e0e;
+}
+
+/* التصميم للأجهزة اللوحية، مثل الآيباد */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px; /* تكبير حجم الخط لأجهزة الآيباد */
+    }
+
+    main {
+        width: 80%; /* ضبط عرض المحتوى */
+        max-width: 700px;
+        padding: 30px; /* توسيع المساحة الداخلية */
+    }
+
+    h1, h2 {
+        font-size: 1.8rem; /* تكبير العناوين */
+    }
+
+    button {
+        padding: 12px 20px; /* زيادة حجم الأزرار */
+        font-size: 1rem;
+    }
+}
+
+/* التصميم للهواتف الذكية */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        width: 95%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}

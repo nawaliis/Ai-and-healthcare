@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المساعد الطبي الافتراضي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في المساعد الطبي الافتراضي</h1>
+        <p>أدخل الأعراض التي تشعر بها وسنساعدك في تحليلها</p>
+    </header>
+    <main>
+        <section id="self-diagnosis">
+            <h2>التشخيص الذاتي</h2>
+            <p>يرجى إدخال أحد الأعراض في الحقل أدناه، على سبيل المثال: "حمى، صداع، كحة".</p>
+            <input type="text" id="symptoms-input" placeholder="أدخل الأعراض هنا" />
+            <button onclick="analyzeSymptoms()">تحليل الأعراض</button>
+            <button onclick="resetFields()">إعادة ضبط</button>
+            <p id="diagnosis-result"></p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
+
